@@ -16,14 +16,24 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Bullet","order":4,"path":"objects/Bullet/Bullet.yy",},
+    {"name":"NPC","order":3,"path":"objects/NPC/NPC.yy",},
     {"name":"ObjPlayer","order":1,"path":"objects/ObjPlayer/ObjPlayer.yy",},
     {"name":"OBJTower","order":2,"path":"objects/OBJTower/OBJTower.yy",},
     {"name":"OBJTowerShot1","order":3,"path":"objects/OBJTowerShot1/OBJTowerShot1.yy",},
     {"name":"TestRoom","order":1,"path":"rooms/TestRoom/TestRoom.yy",},
+<<<<<<< HEAD
     {"name":"Sprite1","order":15,"path":"sprites/Sprite1/Sprite1.yy",},
     {"name":"Sprite2","order":16,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"Sprite3","order":17,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"Sprite4","order":18,"path":"sprites/Sprite4/Sprite4.yy",},
     {"name":"Sprite5","order":19,"path":"sprites/Sprite5/Sprite5.yy",},
+=======
+    {"name":"background","order":2,"path":"sprites/background/background.yy",},
+    {"name":"Sprite1","order":1,"path":"sprites/Sprite1/Sprite1.yy",},
+    {"name":"Sprite2","order":2,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"Sprite3","order":3,"path":"sprites/Sprite3/Sprite3.yy",},
+    {"name":"Sprite6","order":4,"path":"sprites/Sprite6/Sprite6.yy",},
+>>>>>>> origin/Boliverse
   ],
 }
