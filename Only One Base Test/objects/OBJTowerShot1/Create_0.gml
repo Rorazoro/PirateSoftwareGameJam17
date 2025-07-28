@@ -1,7 +1,6 @@
 Damage = 1;
 Speed = 3.5;
 Target = OBJEnemy;
-LastHit = null;
 
 var inst = instance_nearest(x, y, Target);
 move_towards_point(inst.x, inst.y, Speed);
