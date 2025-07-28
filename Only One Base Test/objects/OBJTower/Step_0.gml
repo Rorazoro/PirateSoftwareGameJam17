@@ -1,6 +1,6 @@
 
 if (instance_exists(target)) {
-	var inst = instance_nearest(x,y, ObjPlayer)
+	var inst = instance_nearest(shootOriginX, shootOriginY, target)
 	
 	if (distance_to_object(inst) < range) {
 		ai = "attack";
@@ -13,7 +13,7 @@ if (instance_exists(target)) {
 		shoot_timer--;
 		if (shoot_timer <= 0) {
 			shoot_timer = shoot_time;
-			instance_create_layer(x, y, "VFX", OBJTowerShot1 );
+			instance_create_layer(shootOriginX, shootOriginY, "VFX", shot );
 		}
 	}
 }

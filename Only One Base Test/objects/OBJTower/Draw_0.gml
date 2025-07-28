@@ -1,5 +1,7 @@
 draw_self();
 
-draw_circle(x, y, range, 1);
+if (showRange)
+	draw_circle(shootOriginX, shootOriginY, range, 1);
 
-draw_text(x-10, y-20, ai);
+if (showAIStatus)
+	draw_text(shootOriginX, y-20, ai);
