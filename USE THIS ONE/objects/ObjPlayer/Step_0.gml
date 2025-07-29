@@ -21,3 +21,27 @@ LeftKey =keyboard_check(ord("A"));
 
 	//move
 	x += Xspd;
+	
+	
+	
+	
+	
+	
+	
+	
+//tower spawn
+
+//tower cost
+var spawn_cost = 100;
+
+//space to spawn tower
+if (keyboard_check_pressed(vk_space)) {
+	
+	//check if can afford
+    if (global.gold >= spawn_cost) {
+        instance_create_layer(x, y, "Instances", ObjTree);
+        global.gold -= spawn_cost;
+    } else {
+        show_debug_message("u are broke lmfao!");
+    }
+}

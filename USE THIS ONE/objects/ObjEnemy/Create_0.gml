@@ -4,7 +4,8 @@ attack_cooldown = 60; // 1 A/S
 attack_timer = 0;
 damage = 10;
 target = ObjTree;
-
+max_hp = 100;
+hp = max_hp;
 
 
 //debug
