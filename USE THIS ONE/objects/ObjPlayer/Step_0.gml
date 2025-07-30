@@ -31,15 +31,30 @@ LeftKey =keyboard_check(ord("A"));
 	
 //tower spawn
 
-//tower cost
-var spawn_cost = 100;
 
-//space to spawn tower
+// Tower Selection Hotkey
+if (keyboard_check_pressed(ord("1"))) global.selected_tower = ObjGun;
+if (keyboard_check_pressed(ord("2"))) global.selected_tower = ObjSlow;
+if (keyboard_check_pressed(ord("3"))) global.selected_tower = ObjLaser;
+
+
+//tower cost
+var spawn_cost = 0;
+
+
+if (global.selected_tower == ObjGun) spawn_cost =100;
+if (global.selected_tower == ObjSlow) spawn_cost =150;
+if (global.selected_tower == ObjLaser) spawn_cost =200;
+
+// space to spawn tower
 if (keyboard_check_pressed(vk_space)) {
 	
-	//check if can afford
-    if (global.gold >= spawn_cost) {
-        instance_create_layer(x, y, "Instances", ObjTree);
+    // Check if a tower is selected
+    if (is_undefined(global.selected_tower) || global.selected_tower == noone) {
+        show_debug_message("No tower selected!");
+    }
+    else if (global.gold >= spawn_cost) {
+        instance_create_layer(x, y, "Instances", global.selected_tower);
         global.gold -= spawn_cost;
     } else {
         show_debug_message("u are broke lmfao!");

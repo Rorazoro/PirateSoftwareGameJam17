@@ -6,9 +6,7 @@ Xspd = 0;
 Yspd = 0;
 
 
-//gravity / falling
-
-Grav = .25;
-Jspd = -3;
-
+//tower variables
  global.gold =0;
+ 
+ global.selected_tower = ObjGun;
