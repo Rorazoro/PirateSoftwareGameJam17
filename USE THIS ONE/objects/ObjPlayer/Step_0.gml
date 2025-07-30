@@ -12,7 +12,7 @@ LeftKey =keyboard_check(ord("A"));
 
 	//Horizontal Collision
 	var _SubPixel = .5;
-	if place_meeting(x + Xspd, y, OBJFloorTile)
+	if place_meeting(x + Xspd, y, ObjWall)
 	{
 		//Stop
 		Xspd =0;
@@ -21,6 +21,32 @@ LeftKey =keyboard_check(ord("A"));
 
 	//move
 	x += Xspd;
+	
+	if (RightKey) {
+		if (sprite_index == SpritePlayerLeft) {
+			sprite_index = SpritePlayerTurn
+			image_xscale = 1
+		}
+		else {
+			sprite_index = SpritePlayerRight
+			image_xscale = 1
+		}
+		image_speed = 1;
+	}
+	else if (LeftKey) {
+		if (sprite_index == SpritePlayerRight) {
+			sprite_index = SpritePlayerTurn
+			image_xscale = -1
+		}
+		else {
+			sprite_index = SpritePlayerLeft
+			image_xscale = 1
+		}
+		image_speed = 1;
+	}
+	else {
+		image_speed = 0.5;
+	}
 	
 	
 	

@@ -1,9 +1,11 @@
-range = 200;
+range = 100;
 spawnedObj = ObjEnemy;
 spawnOriginY = y;
-spawnOriginX = x - 64;
+spawnOriginXMod = 150;
+spawnOriginXRightSide = x - spawnOriginXMod;
+spawnOriginXLeftSide = x + spawnOriginXMod;
 
-spawn_time = 1000;
+spawn_time = 2000;
 spawn_timer = 0;
 
-showRange = true;
+showRange = false;
