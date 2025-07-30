@@ -15,3 +15,4 @@ draw_rectangle(x - bar_width/2, y - sprite_height - 10, x - bar_width/2 + (bar_w
 // Optional: Draw numerical HP
 draw_set_color(c_white);
 draw_text(x, y - sprite_height - 20, string(hp) + "/" + string(max_hp));
+
